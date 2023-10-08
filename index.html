@@ -7,23 +7,83 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- Header of my page -->
     <header>
-      <div id="container-logo"></div>
+      <!-- Logo -->
+      <div id="container-logo">Logo</div>
+      <!-- Navbar -->
       <nav id="nav-bar">
         <ul>
           <li><a href="#section-home">Home</a></li>
           <li><a href="#section-about">About</a></li>
-          <li><a href="#section-projects">Projects</a></li>
+          <li><a href="#section-skills">Skills</a></li>
           <li><a href="#section-contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="section-home"></section>
-      <section id="section-about"></section>
-      <section id="section-projects"></section>
-      <section id="section-contact"></section>
+      <!-- Home section -->
+      <section class="sections" id="section-home">
+        <div id="container-home">
+          <p>Hi, My name is:</p>
+          <p class="name">Viktor Ivanovski</p>
+          <p>And I'm a Front-End Web Developer</p>
+        </div>
+        <img
+          id="profile-img"
+          src="./images/placeholder-profile-img.jpg"
+          alt="Profile img"
+        />
+      </section>
+      <!-- About section -->
+      <section class="sections" id="section-about">
+        <div>
+          <div id="container-about">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus quisquam expedita velit tempora fugiat et ipsam,
+              quis incidunt quasi accusamus debitis ipsa veniam qui aliquid
+              similique porro commodi aperiam odio.
+            </p>
+          </div>
+          <img id="html-img" src="./images/html-img.png" alt="HTML Image" />
+        </div>
+      </section>
+      <!-- Projects section -->
+      <section class="sections" id="section-skills">
+        <p>My Web-Development Skills:</p>
+        <ul>
+          <li>Skills</li>
+          <li>Skills</li>
+          <li>Skills</li>
+          <li>Skills</li>
+          <li>Skills</li>
+        </ul>
+      </section>
+      <!-- Contact section -->
+      <section class="sections" id="section-contact">
+        <p>Contact Me</p>
+        <a href="https://www.example.com" class="image-link">
+          <img src="./images/phone.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com" class="image-link">
+          <img src="./images/mail.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com" class="image-link">
+          <img src="./images/linkedin.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com" class="image-link">
+          <img src="./images/instagram.png" alt="Click me" />
+        </a>
+      </section>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+      <address>
+        <a href="mailto:test@test.com">Mail Me!</a>
+        <a href="tel:123456789">Call Me!</a>
+      </address>
+      <p>&copy: MyProject 2020</p>
+    </footer>
   </body>
 </html>
