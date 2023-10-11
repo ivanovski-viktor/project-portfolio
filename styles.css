@@ -1,0 +1,93 @@
+/* Font Import */
+@font-face {
+  font-family: "Sofia Sans Condensed";
+  src: url("./fonts/static/SofiaSansCondensed-Regular.ttf") format("woff2");
+}
+/* General Styles */
+* {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Sofia Sans Condensed";
+}
+img {
+  width: 50px;
+}
+a {
+  text-decoration: none;
+}
+/* HEADER */
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #173d7a;
+  opacity: 95%;
+}
+/* Logo */
+header #Logo {
+  margin: 5px 0;
+  height: 40px;
+  width: auto;
+}
+/* Nav Bar */
+header nav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  margin-right: 10px;
+}
+header nav ul li {
+  display: inline;
+  list-style: none;
+  line-height: 50px;
+  margin-left: 5px;
+}
+header nav ul li a {
+  padding-left: 5px;
+  border-left: 2px solid #ff2c9c;
+  font-weight: 400;
+}
+header nav ul li a:hover {
+  color: #51c985;
+}
+
+/*SECTIONS */
+.sections {
+  height: 600px;
+  padding-top: 100px;
+}
+
+/* Home Section */
+#section-home {
+  text-align: center;
+  background-color: #d4ecff;
+}
+#container-home {
+  width: 300px;
+  margin: auto;
+}
+#container-home p {
+  text-align: left;
+  color: #000;
+}
+#profile-img {
+  width: 300px;
+  border-radius: 50%;
+  border: 5px double black;
+  margin-bottom: 50px;
+}
+#container-home p {
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+#container-home span {
+  display: inline-block;
+  font-size: 22px;
+  color: #007a7b;
+  font-weight: bold;
+}
