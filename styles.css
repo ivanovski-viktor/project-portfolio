@@ -6,7 +6,7 @@
 /* General Styles */
 * {
   margin: 0;
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-family: "Sofia Sans Condensed";
 }
@@ -16,6 +16,30 @@ img {
 a {
   text-decoration: none;
 }
+/* Buttons */
+.contact-btns {
+  display: block;
+  text-align: center;
+  width: 150px;
+  background-color: #ff2c9c;
+  padding: 15px 30px;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  box-shadow: 0 2px 2px black;
+}
+.contact-btns:hover {
+  background-color: #fc70bb;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER */
 header {
   height: 50px;
@@ -23,8 +47,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #173d7a;
-  opacity: 95%;
+  background-color: #09375ac8;
 }
 /* Logo */
 header #Logo {
@@ -50,11 +73,11 @@ header nav ul li a {
   padding-left: 5px;
   border-left: 2px solid #ff2c9c;
   font-weight: 400;
+  color: #fff;
 }
 header nav ul li a:hover {
-  color: #51c985;
+  color: #007a7b;
 }
-
 /*SECTIONS */
 .sections {
   height: 600px;
@@ -63,16 +86,20 @@ header nav ul li a:hover {
 
 /* Home Section */
 #section-home {
+  background-image: url("./images/background-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-  background-color: #d4ecff;
 }
 #container-home {
   width: 300px;
-  margin: auto;
+  margin: 0 auto;
 }
 #container-home p {
   text-align: left;
-  color: #000;
+  font-size: 25px;
+  color: #93d1df;
+  font-weight: 800;
 }
 #profile-img {
   width: 300px;
@@ -82,12 +109,59 @@ header nav ul li a:hover {
 }
 #container-home p {
   display: inline-block;
-  font-size: 22px;
   margin-bottom: 25px;
 }
 #container-home span {
   display: inline-block;
-  font-size: 22px;
+  font-size: 25px;
   color: #007a7b;
   font-weight: bold;
+}
+
+/* About Section */
+#section-about {
+  background-color: #fff;
+  background-image: url(./images/html-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section-about #container-about {
+  background-color: #000000b7;
+  margin: -50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  width: 300px;
+  height: 500px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#section-about #container-about h1 {
+  color: #ff2c9c;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 10px 0 10px;
+}
+
+#section-about .contact-btns {
+  margin: 75px auto;
+}
+
+#section-about .name {
+  font-size: 22px;
+  color: #ff2c9c;
+  text-transform: uppercase;
+}
+/* Skills Section */
+#section-skills {
+  background-color: #a8354f;
+}
+
+/* Contact Section */
+#section-contact {
+  background-color: #00a0c7;
+}
+footer {
+  background-color: #007a7b;
 }
