@@ -159,17 +159,17 @@ header {
 }
 
 /* img */
-#image-fun {
-  width: 500px;
-  border: 10px double #000;
-  background-image: url("./images/texture-wood.jpg");
-  background-size: cover;
-  background-color: #0000005d;
-  background-blend-mode: darken;
+#image-fun-container {
   position: absolute;
   top: 250px;
   left: 250px;
 }
+#image-fun {
+  width: 500px;
+  height: auto;
+  border: 5px solid #000;
+}
+
 /* Skills Section */
 #section-skills {
   background-color: #000;
@@ -177,6 +177,29 @@ header {
 }
 #section-skills img {
   width: 600px;
+}
+#section-skills .heading,
+#section-skills .description {
+  color: #fff;
+}
+#section-skills .description {
+  font-size: 50px;
+  list-style: none;
+  padding: 10px;
+}
+#section-skills ul {
+  padding-left: 0px;
+  margin-top: 45px;
+}
+#section-skills #container-skills {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+#section-skills #img-skills {
+  position: absolute;
+  top: 250px;
+  right: 250px;
 }
 
 /* Contact Section */
@@ -191,7 +214,7 @@ header {
   width: 600px;
   position: absolute;
   top: 350px;
-  left: 250px;
+  right: 250px;
 }
 #container-contactInfo p {
   margin-bottom: 50px;
@@ -201,7 +224,7 @@ header {
   padding-left: 30px;
   position: absolute;
   top: 200px;
-  right: 350px;
+  left: 350px;
   border-left: 5px solid black;
 }
 #container-contact a {
@@ -231,5 +254,315 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #000;
+  background-color: #bebebe;
+  position: relative;
+}
+footer .address {
+  margin: 0px auto;
+  text-align: center;
+  padding: 50px;
+}
+footer .image-link {
+  width: 50px;
+  margin: 30px;
+  filter: grayscale(70%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1630px) {
+  /* HOME SECTION */
+  #container-home {
+    left: 100px;
+  }
+  #profile-img {
+    right: 100px;
+  }
+  /* ABOUT SECTION */
+
+  #container-about {
+    right: 50px;
+  }
+  #image-fun-container {
+    left: 100px;
+  }
+
+  /* SKILLS SECTION */
+  #section-skills #container-skills {
+    left: 100px;
+  }
+  #section-skills #img-skills {
+    right: 100px;
+  }
+
+  /* CONTACT SECTION */
+  #section-contact #container-contactInfo {
+    right: 100px;
+  }
+  #section-contact #container-contact {
+    left: 100px;
+  }
+}
+@media (max-width: 1320px) {
+  /* HOME SECTION */
+  #container-home {
+    left: 10px;
+  }
+  #profile-img {
+    right: 10px;
+  }
+  /* ABOUT SECTION */
+
+  #container-about {
+    right: 5px;
+  }
+  #image-fun-container {
+    left: 10px;
+  }
+
+  /* SKILLS SECTION */
+  #section-skills #container-skills {
+    left: 10px;
+  }
+  #section-skills #img-skills {
+    right: 10px;
+  }
+
+  /* CONTACT SECTION */
+  #section-contact #container-contactInfo {
+    right: 10px;
+  }
+  #section-contact #container-contact {
+    left: 10px;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* HOME SECTION */
+  #container-home {
+    top: 120px;
+    left: 50px;
+    width: 300px;
+  }
+  #profile-img {
+    right: 20px;
+    width: -20%;
+  }
+  /* ABOUT SECTION */
+
+  #container-about {
+    top: 120px;
+    right: 45px;
+    width: 300px;
+  }
+  #image-fun-container {
+    left: 50px;
+  }
+
+  /* SKILLS SECTION */
+  #section-skills #container-skills {
+    left: 50px;
+    top: 120px;
+    width: 300px;
+  }
+  #section-skills #img-skills {
+    right: 50px;
+  }
+
+  /* CONTACT SECTION */
+  #section-contact #container-contactInfo {
+    top: 280px;
+    right: 50px;
+    width: 300px;
+  }
+  #section-contact #container-contact {
+    left: 50px;
+  }
+}
+@media (max-width: 930px) {
+  /* HEADER */
+  #header {
+    height: 50px;
+  }
+  /* Logo */
+  #header #Logo {
+    height: 30px;
+  }
+  /* Nav Bar */
+  #header nav {
+    line-height: 50px;
+  }
+  #header nav ul li a {
+    font-size: 18px;
+  }
+  /* HOME SECTION */
+  .sections {
+    height: 1500px;
+    padding-top: 100px;
+  }
+  #section-home {
+    height: 1150px;
+    text-align: center;
+  }
+  .contact-btns {
+    margin: 100px auto;
+  }
+  #container-home {
+    width: 380px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #profile-img {
+    width: 380px;
+    border-bottom-left-radius: 0px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* ABOUT SECTION */
+
+  #container-about {
+    text-align: center;
+    width: 380px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #image-fun-container {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #image-fun-container #image-fun {
+    width: 380px;
+  }
+
+  /* SKILLS SECTION */
+  #section-skills #container-skills {
+    text-align: center;
+    width: 380px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #section-skills #img-skills {
+    width: 400px;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* CONTACT SECTION */
+  #section-contact #container-contactInfo {
+    text-align: center;
+    width: 380px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #section-contact #container-contact {
+    width: 380px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-btns {
+    width: 200px;
+    font-size: 20px;
+  }
+  /* FONT SIZE */
+  .name {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  #container-home .heading span {
+    font-size: 30px;
+  }
+  .highlighted-text {
+    font-size: 35px;
+  }
+  /* HOME SECTION */
+  .sections {
+    height: 1300px;
+  }
+  #section-home {
+    height: 1150px;
+    text-align: center;
+  }
+  .contact-btns {
+    margin: 100px auto;
+  }
+  #container-home {
+    width: 280px;
+    top: 70%;
+  }
+  #profile-img {
+    width: 280px;
+    border-bottom-left-radius: 0px;
+    top: 25%;
+  }
+  /* ABOUT SECTION */
+
+  #container-about {
+    text-align: center;
+    width: 280px;
+    top: 35%;
+  }
+  #image-fun-container {
+    top: 75%;
+  }
+  #image-fun-container #image-fun {
+    margin-top: 100px;
+    margin-left: 15px;
+    width: 280px;
+  }
+
+  /* SKILLS SECTION */
+  #section-skills {
+    height: 1100px;
+  }
+  #section-skills .heading {
+    font-size: 50px;
+  }
+  #section-skills #container-skills {
+    text-align: center;
+    width: 280px;
+    top: 35%;
+  }
+  #section-skills #img-skills {
+    width: 300px;
+    top: 80%;
+  }
+
+  /* CONTACT SECTION */
+  #section-contact {
+    height: 1000px;
+  }
+  #section-contact #container-contactInfo {
+    text-align: center;
+    width: 280px;
+    top: 35%;
+  }
+  #section-contact #container-contact {
+    width: 280px;
+    top: 75%;
+  }
+  #section-contact #container-contact a {
+    height: 80px;
+    width: 200px;
+  }
+  #section-contact #container-contact a img {
+    width: 80px;
+    height: 80px;
+  }
+  #section-contact #container-contact a p {
+    padding-left: 20px;
+    font-size: 40px;
+    line-height: 60px;
+  }
 }

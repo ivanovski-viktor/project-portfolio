@@ -69,18 +69,22 @@
           </p>
           <a class="contact-btns" href="#section-contact"> Contact Me </a>
         </div>
-        <img id="image-fun" src="./images/fun_img.jpg" alt="Profile img" />
+        <div id="image-fun-container">
+          <img id="image-fun" src="./images/fun_img.jpg" alt="Profile img" />
+        </div>
       </section>
       <!-- Skills section -->
       <section class="sections" id="section-skills">
-        <p>My Web-Development Skills:</p>
-        <ul>
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
-        </ul>
+        <div id="container-skills">
+          <p class="heading">My Web-Development Skills:</p>
+          <ul>
+            <li class="description">HTML</li>
+            <li class="description">CSS</li>
+            <li class="description">Bootstrap</li>
+            <li class="description">JavaScript</li>
+            <li class="description">React.js</li>
+          </ul>
+        </div>
         <img id="img-skills" src="./images/skills.png" alt="" />
       </section>
       <!-- Contact section -->
@@ -124,11 +128,20 @@
     </main>
     <!-- Footer -->
     <footer>
-      <address>
-        <a href="mailto:test@test.com">Mail Me!</a>
-        <a href="tel:123456789">Call Me!</a>
-      </address>
-      <p>&copy: MyProject 2020</p>
+      <div class="address">
+        <a href="https://www.example.com">
+          <img class="image-link" src="./images/phone.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com">
+          <img class="image-link" src="./images/mail.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com">
+          <img class="image-link" src="./images/linkedin.png" alt="Click me" />
+        </a>
+        <a href="https://www.example.com">
+          <img class="image-link" src="./images/instagram.png" alt="Click me" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
