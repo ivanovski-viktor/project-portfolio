@@ -6,7 +6,7 @@
 /* GENERAL STYLES */
 * {
   margin: 0;
-  color: #000;
+  color: #fff;
   font-size: 18px;
   font-family: "Sofia Sans Condensed";
 }
@@ -34,11 +34,9 @@ a {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
-
-  box-shadow: 0 2px 2px black;
 }
 .contact-btns:hover {
-  background-color: #038285;
+  background-color: lightgrey;
 }
 
 /* Smooth scrolling */
@@ -57,7 +55,9 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background: radial-gradient(circle, #025153, #000);
+  opacity: 90%;
+  box-shadow: 0px 5px 5px #0c0c0c;
 }
 /* Logo */
 #header #Logo {
@@ -101,21 +101,23 @@ header {
   top: 250px;
   left: 250px;
 }
-#container-home .heading {
+.heading {
   font-size: 60px;
   font-weight: 800;
+  color: #000;
 }
 #container-home .heading span {
   font-size: 60px;
 }
-#container-home .description {
+.description {
   font-size: 30px;
   font-weight: 500;
+  color: #000;
 }
 #container-home .description span {
   font-size: 30px;
 }
-#container-home .highlighted-text {
+.highlighted-text {
   font-size: 40px;
   color: #0eaf63;
 }
@@ -126,7 +128,7 @@ header {
 #profile-img {
   width: 500px;
   border-bottom-left-radius: 50%;
-  border: 20px double black;
+  border: 8px solid #000;
   position: absolute;
   top: 250px;
   right: 250px;
@@ -135,20 +137,99 @@ header {
 #container-home p {
   margin-bottom: 25px;
 }
+#container-home .contact-btns {
+  border: none;
+}
 
 /* About Section */
 #section-about {
+  position: relative;
+}
+#container-about {
+  width: 600px;
+  position: absolute;
+  top: 250px;
+  right: 250px;
+}
+#container-about .heading {
+  margin-top: 20px;
+}
+#section-about a {
+  margin-top: 30px;
 }
 
+/* img */
+#image-fun {
+  width: 500px;
+  border: 10px double #000;
+  background-image: url("./images/texture-wood.jpg");
+  background-size: cover;
+  background-color: #0000005d;
+  background-blend-mode: darken;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
 /* Skills Section */
 #section-skills {
-  background-color: #a8354f;
+  background-color: #000;
+  position: relative;
+}
+#section-skills img {
+  width: 600px;
 }
 
 /* Contact Section */
 #section-contact {
-  background-color: #00a0c7;
+  position: relative;
 }
+.image-link {
+  width: 100px;
+}
+
+#container-contactInfo {
+  width: 600px;
+  position: absolute;
+  top: 350px;
+  left: 250px;
+}
+#container-contactInfo p {
+  margin-bottom: 50px;
+}
+
+#container-contact {
+  padding-left: 30px;
+  position: absolute;
+  top: 200px;
+  right: 350px;
+  border-left: 5px solid black;
+}
+#container-contact a {
+  width: 400px;
+  display: block;
+  height: 150px;
+  position: relative;
+}
+
+#container-contact .text-SocialMedia {
+  display: inline;
+  color: #000;
+  font-size: 50px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#container-contact .text-SocialMedia:hover {
+  color: #0eaf63;
+}
+
+#container-contact a img {
+  height: 150px;
+  width: 150px;
+}
+
+/* FOOTER */
 footer {
-  background-color: #007a7b;
+  background-color: #000;
 }
