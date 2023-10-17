@@ -108,6 +108,9 @@ header {
 }
 #container-home .heading span {
   font-size: 60px;
+  position: relative;
+  left: -100%;
+  animation: slideRight 2.5s forwards;
 }
 .description {
   font-size: 30px;
@@ -120,6 +123,18 @@ header {
 .highlighted-text {
   font-size: 40px;
   color: #0eaf63;
+  position: relative;
+  left: -100%;
+  animation: slideRight 3s forwards;
+}
+/* ANIMATION */
+@keyframes slideRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }
 #container-home a {
   margin-top: 100px;
