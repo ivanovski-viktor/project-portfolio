@@ -319,6 +319,7 @@ footer .image-link {
   /* HEADER */
   #header {
     height: 50px;
+    z-index: 1;
   }
   /* Logo */
   #header #Logo {
