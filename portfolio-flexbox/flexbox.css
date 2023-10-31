@@ -18,21 +18,21 @@ a {
 }
 /* Span for Name */
 .name {
-  font-size: 40px;
+  font-size: 2rem;
   color: #fff;
 }
 /* Buttons */
 .contact-btns {
   display: block;
   text-align: center;
-  width: 250px;
+  width: 25vw;
   background-color: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   color: #000;
-  border: 2px solid black;
-  border-radius: 25px;
+  border: 0.15rem solid black;
+  border-radius: 1.5rem;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .contact-btns:hover {
@@ -46,14 +46,14 @@ html {
 
 /* HEADER */
 #header {
-  height: 70px;
+  height: 7vh;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: radial-gradient(circle, #025153, #000);
   opacity: 90%;
-  box-shadow: 0px 5px 5px #0c0c0c;
+  box-shadow: 0 0.3rem 0.3rem #0c0c0c;
   /* flex */
   display: flex;
   align-items: center;
@@ -61,20 +61,20 @@ html {
 }
 /* Logo */
 #header #Logo {
-  margin-left: 10px;
-  height: 50px;
-  width: auto;
+  margin-left: 1vw;
+  height: auto;
+  width: 12vw;
 }
 /* Nav Bar */
 #header nav ul {
   list-style: none;
   display: flex;
-  margin-right: 30px;
+  margin-right: 3vw;
   padding: 0;
-  gap: 20px;
+  gap: 2vw;
 }
 #header nav ul li a {
-  font-size: 22px;
+  font-size: 1.2rem;
   color: #fff;
 }
 #header nav ul li a:hover {
@@ -83,14 +83,13 @@ html {
 
 /*SECTIONS */
 .sections {
-  height: 880px;
-  padding-top: 100px;
+  height: 95vh;
+  padding-top: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 150px;
-  padding-right: 150px;
-  gap: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 /* Home Section */
@@ -98,29 +97,29 @@ html {
   background: radial-gradient(circle, #038285, #000);
 }
 #container-home {
-  width: 600px;
+  width: 30vw;
 }
 .heading {
-  font-size: 60px;
+  font-size: 2.2rem;
   font-weight: 800;
   color: #000;
 }
 #container-home .heading span {
-  font-size: 60px;
+  font-size: 2.2rem;
   position: relative;
   left: -100%;
   animation: slideRight 2.5s forwards;
 }
 .description {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #000;
 }
 #container-home .description span {
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 .highlighted-text {
-  font-size: 40px;
+  font-size: 2.2rem;
   color: #0eaf63;
   position: relative;
   left: -100%;
@@ -136,17 +135,17 @@ html {
   }
 }
 #container-home a {
-  margin-top: 100px;
+  margin-top: 7.5vh;
 }
 
 #profile-img {
-  width: 500px;
+  width: 30vw;
   border-bottom-left-radius: 50%;
-  border: 8px solid #000;
-  box-shadow: 1px 5px 20px#000;
+  border: 0.4rem solid #000;
+  box-shadow: 0.1rem 0.3rem 1rem#000;
 }
 #container-home p {
-  margin-bottom: 25px;
+  margin-bottom: 1.2rem;
 }
 #container-home .contact-btns {
   border: none;
@@ -154,20 +153,21 @@ html {
 
 /* About Section */
 #container-about {
-  width: 600px;
+  height: 60vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-#container-about .heading {
-  margin-top: 20px;
-}
-#section-about a {
-  margin-top: 30px;
+#container-about a {
+  margin-top: 0.6rem;
 }
 
 /* img */
 #image-fun {
-  width: 500px;
+  width: 30vw;
   height: auto;
-  border: 5px solid #000;
+  border: 0.3rem solid #000;
 }
 
 /* Skills Section */
@@ -175,61 +175,60 @@ html {
   background-color: #000;
 }
 #section-skills img {
-  width: 450px;
+  width: 30vw;
 }
 #section-skills .heading,
 #section-skills .description {
   color: #fff;
 }
 #section-skills .description {
-  font-size: 50px;
+  font-size: 2.5rem;
   list-style: none;
-  padding: 10px;
+  padding: 0.6rem;
 }
 #section-skills ul {
   padding-left: 0px;
-  margin-top: 45px;
+  margin-top: 2rem;
 }
 
 /* Contact Section */
 .image-link {
-  width: 100px;
+  width: 5vw;
 }
 
 #container-contactInfo {
-  width: 600px;
+  width: 30vw;
 }
 #container-contactInfo p {
-  margin-bottom: 50px;
+  margin-bottom: 2.5rem;
 }
 
 #container-contact {
-  padding-left: 30px;
-  border-left: 5px solid black;
-  width: 400px;
+  padding-left: 1.8rem;
+  border-left: 0.3rem solid black;
+  width: 30vw;
   display: flex;
   flex-direction: column;
-  width: 450px;
 }
 #container-contact a {
   height: 125px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 #container-contact .text-SocialMedia {
   display: inline;
   color: #000;
-  font-size: 50px;
+  font-size: 2.5rem;
 }
 #container-contact .text-SocialMedia:hover {
   color: #0eaf63;
 }
 
 #container-contact a img {
-  height: 125px;
-  width: 125px;
+  height: 5rem;
+  width: 5rem;
 }
 
 /* FOOTER */
@@ -237,142 +236,75 @@ footer {
   background-color: #bebebe;
 }
 footer .address {
-  padding: 50px 0;
+  padding: 5vh 0;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 footer .image-link {
-  width: 50px;
+  width: 2.5rem;
   filter: grayscale(70%);
 }
 
-@media (max-width: 1150px) {
-  /* Lowering padding left/right */
-  .sections {
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 10px;
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
   }
-  /* Adjusting values in section-home */
+  .contact-btns {
+    width: 50vw;
+    margin-top: 0px;
+  }
   #container-home {
-    width: 350px;
-  }
-  .heading,
-  #container-home .heading span {
-    font-size: 40px;
-  }
-  .description,
-  #container-home .description span {
-    font-size: 30px;
-  }
-  #profile-img {
-    width: 350px;
-  }
-
-  /* Adjustinng values in section-about */
-  #container-about {
-    width: 350px;
-    margin-top: -100px;
-  }
-  /* img */
-  #image-fun {
-    width: 350px;
-  }
-
-  /* No styling required in section-skills */
-
-  /* Contact Section */
-  .image-link {
-    width: 50px;
-  }
-
-  #container-contactInfo {
-    width: 350px;
-  }
-  #container-contactInfo p {
-    margin-bottom: 50px;
-  }
-  #container-contact {
     display: flex;
     flex-direction: column;
-    width: 250px;
-  }
-  #container-contact a {
-    height: 100px;
-    display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
   }
-  #container-contact .text-SocialMedia {
-    margin: 0;
-    font-size: 40px;
+  #container-home a {
+    margin-top: 0;
   }
-
-  #container-contact a img {
-    height: 75px;
-    width: 75px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* HEADER */
-  #header {
-    height: 50px;
-    z-index: 1;
-  }
-  /* Logo */
   #header #Logo {
-    margin-left: 0;
-    height: 35px;
+    width: 20vw;
   }
-  /* Nav Bar */
-  #header nav ul {
-    margin-right: 15px;
-    padding: 0;
-    gap: 7.5px;
-  }
-  #header nav ul li a {
-    font-size: 18px;
-  }
-
   /*SECTIONS */
   .sections {
-    height: 1180px;
-    padding-top: 100px;
+    height: 90vh;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 10px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 5vh;
   }
 
   /* Adjusting values in section-home */
   #container-home {
-    width: 330px;
+    width: 80vw;
   }
   #profile-img {
-    width: 330px;
+    width: 60vw;
     border-bottom-left-radius: 0;
-  }
-  #container-home .contact-btns {
-    margin-top: 0;
   }
 
   /* Adjustinng values in section-about */
   #container-about {
-    width: 330px;
+    width: auto;
+    height: 50vh;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   /* img */
   #image-fun {
-    height: 360px;
-    width: 330px;
+    width: auto;
+    height: 30vh;
   }
   #container-about .heading {
-    font-size: 35px;
+    font-size: 2rem;
   }
 
   /*styling section-skills */
@@ -380,31 +312,23 @@ footer .image-link {
     flex-direction: column;
   }
   #section-skills #img-skills {
-    width: 350px;
+    width: auto;
+    height: 35vh;
   }
 
   /* Contact Section */
   .sections + #section-contact {
     flex-direction: column;
   }
-  .image-link {
-    width: 50px;
-  }
   #container-contactInfo {
-    width: 330px;
+    width: auto;
   }
   #container-contact {
-    width: 310px;
+    height: 50vh;
+    width: 85vw;
   }
   #container-contact a {
-    height: 100px;
-    gap: 10px;
-  }
-  #container-contact .text-SocialMedia {
-    font-size: 40px;
-  }
-  #container-contact a img {
-    height: 75px;
-    width: 75px;
+    height: 8rem;
+    gap: 0.8rem;
   }
 }
